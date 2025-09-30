@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Prediction</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="static/assets/logo/logo.png"/>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="static/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/assets/css/linearicons.css">
+    <link rel="stylesheet" href="static/assets/css/animate.css">
+    <link rel="stylesheet" href="static/assets/css/flaticon.css">
+    <link rel="stylesheet" href="static/assets/css/slick.css">
+    <link rel="stylesheet" href="static/assets/css/slick-theme.css">
+    <link rel="stylesheet" href="static/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/assets/css/bootsnav.css">
+    <link rel="stylesheet" href="static/assets/css/style.css">
+    <link rel="stylesheet" href="static/assets/css/responsive.css">
+</head>
+<body>
+    <header id="header-top" class="header-top">
+        <div class="container">
+            <nav class="navbar navbar-default bootsnav navbar-sticky">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="index.html">sales<span>prediction</span></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/">Home</a></li>
+                            <li class="active"><a href="#">Sales Prediction</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="prediction-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Make a Sales Prediction</h2>
+                <p>Enter your data and predict sales with AI-powered insights.</p>
+            </div>
+            <div class="form-container text-center">
+                <form action="/predict" method="GET" class="prediction-form">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="Inventory">Inventory</label>
+                            <input type="number" id="Inventory" name="Inventory" class="form-control" step="0.01" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="MRP">MRP</label>
+                            <input type="number" id="MRP" name="MRP" class="form-control" step="0.01" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="Sales">Sales</label>
+                            <input type="number" id="Sales" name="Sales" class="form-control" step="0.01" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="Weekly_Sales">Weekly Sales</label>
+                            <input type="number" id="Weekly_Sales" name="Weekly_Sales" class="form-control" step="0.01" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="welcome-hero-btn">Predict Sales</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <script src="static/assets/js/jquery.js"></script>
+    <script src="static/assets/js/bootstrap.min.js"></script>
+    <script src="static/assets/js/bootsnav.js"></script>
+    <script src="static/assets/js/custom.js"></script>
+</body>
+</html>
